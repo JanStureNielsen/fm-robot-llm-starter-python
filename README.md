@@ -4,7 +4,7 @@
 
 ## Before class (10 minutes)
 
-1. Install Python 3.10 or newer.
+1. Install Python 3.11 or newer.
 2. Clone this repository and install:
    ```sh
    python -m venv .venv
