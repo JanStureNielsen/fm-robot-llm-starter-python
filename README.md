@@ -22,14 +22,19 @@
    python ticker.py -C ~/.fm/credential -E MARKETPLACE_ID
    ```
    Press Ctrl-C to stop.
-5. Make sure you can open Codex and point it at this folder.
+5. Install a coding agent that runs **on your own computer**: Codex (the CLI
+   or the VS Code extension) or Claude Code. Open it in this folder.
+   Don't use Codex in the browser (Codex cloud). It has no internet access by
+   default, so it can't reach the marketplace to run or check your robot. And
+   you need to watch your robot act in your own ticker anyway. With everything
+   on your laptop the loop is simple: prompt, run, look.
 
 If step 4 fails, email the error message to the instructor **before** class.
 There's no time to fix setup during the session.
 
 ## In class
 
-Have three windows side by side: the class video call, Codex, and a
-terminal running the ticker. Follow `PROMPTS.md`, and post in the chat when
+Have three windows side by side: the class video call, your coding agent,
+and a terminal running the ticker. Follow `PROMPTS.md`, and post in the chat when
 you finish each step (for example "step 3 done") or get stuck. When you're
 stuck, paste the whole error message into the chat.
