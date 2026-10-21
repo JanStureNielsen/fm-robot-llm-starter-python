@@ -56,4 +56,4 @@ in real classes.
   Do not hit the live server from tests.
 - Never put credentials in code or commit them. They live in
   `~/.fm/credential`, or are passed with `-C`.
-- Run with: `python robot.py -C ~/.fm/credential -E <marketplace-id>`
+- Run with: `python robot.py -C ~/.fm/credential -E 3428`

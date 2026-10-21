@@ -19,7 +19,7 @@
    ```
 4. Check that it works. You should see a live table of markets:
    ```sh
-   python ticker.py -C ~/.fm/credential -E MARKETPLACE_ID
+   python ticker.py -C ~/.fm/credential -E 3428
    ```
    Press Ctrl-C to stop.
 5. Install a coding agent that runs **on your own computer**: Codex (the CLI
