@@ -1,4 +1,4 @@
-# Build a trading robot by prompting
+# Build a trading robot with AI
 
 `ticker.py` is from [fm-sdk](https://github.com/flexemarkets/fm-sdk) (MIT licence, see `LICENSE`).
 
