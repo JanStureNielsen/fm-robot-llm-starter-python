@@ -1,6 +1,6 @@
 # Build a trading robot with AI
 
-`ticker.py` is from [fm-sdk](https://github.com/flexemarkets/fm-sdk) (MIT licence, see `LICENSE`).
+`ticker.py` is from [fm-sdk](https://github.com/flexemarkets/fm-sdk) (MIT license, see `LICENSE`).
 
 ## Before class (10 minutes)
 
