@@ -13,7 +13,7 @@
    ```
 3. Create `~/.fm/credential` with the account details you were given:
    ```properties
-   account=ACCOUNT
+   account=fintech2026
    email=you@example.edu
    password=PASSWORD
    ```
