@@ -9,6 +9,9 @@ trade in the same marketplace at the same time.
 - `ticker.py` — a working, read-only example. It connects, keeps a live order
   book through a `Desk`, and prints it. **Start from this.** It shows how to
   connect, read the book and the tape, and react to session changes.
+- `prices.py` — turns the API's integer prices into decimals and back,
+  exactly. Show and parse prices with it rather than dividing or multiplying
+  by 100 yourself.
 - `requirements.txt` — the SDK is pinned to `fm-sdk==0.7.0`. Do not change the
   version; the API is pre-1.0 and changes between releases.
 
