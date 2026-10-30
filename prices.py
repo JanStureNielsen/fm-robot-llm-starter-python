@@ -6,20 +6,21 @@ smallest step. A market's ``price_decimals`` (and a marketplace's
 is 4.05. This is the one place that knows that; nothing else in the robot
 should multiply or divide by a power of ten.
 
-The SDK does not carry the decimal fields yet, so callers pass
-``PRICE_DECIMALS`` for now. Conversion is exact (``Decimal``), never ``float``.
+Pass the market's own ``market.price_decimals`` (and the marketplace's
+``cash_decimals``); the constants below are what the server gives one that
+does not set them. Conversion is exact (``Decimal``), never ``float``.
 """
 
 from decimal import Decimal
 
 PRICE_DECIMALS = 2
-"""Where the decimal point goes in a price, until the market says (fm-robots#495)."""
+"""A price's decimal places when the market does not set them."""
 
 CASH_DECIMALS = 2
-"""Where the decimal point goes in cash, until the marketplace says."""
+"""Cash's decimal places when the marketplace does not set them."""
 
 UNIT_DECIMALS = 0
-"""Where the decimal point goes in units, until the market says."""
+"""A unit count's decimal places when the market does not set them."""
 
 
 def to_decimal(value: int, decimals: int) -> Decimal:
