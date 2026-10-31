@@ -1,2 +1,2 @@
-fm-sdk==0.7.0
+fm-sdk==0.17.0
 pytest

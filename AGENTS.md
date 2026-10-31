@@ -10,9 +10,9 @@ trade in the same marketplace at the same time.
   book through a `Desk`, and prints it. **Start from this.** It shows how to
   connect, read the book and the tape, and react to session changes.
 - `prices.py` — turns the API's integer prices into decimals and back,
-  exactly. Show and parse prices with it rather than dividing or multiplying
-  by 100 yourself.
-- `requirements.txt` — the SDK is pinned to `fm-sdk==0.7.0`. Do not change the
+  exactly, at a market's `price_decimals`. Show and parse prices with it
+  rather than dividing or multiplying by a power of ten yourself.
+- `requirements.txt` — the SDK is pinned to `fm-sdk==0.17.0`. Do not change the
   version; the API is pre-1.0 and changes between releases.
 
 The SDK source is at https://github.com/flexemarkets/fm-sdk (`sdks/python/fm/`).
@@ -21,7 +21,10 @@ rather than guessing method names.
 
 ## Facts about the API that are easy to get wrong
 
-- **Prices are integers in cents.** `405` is $4.05.
+- **Prices are integers counting the market's smallest price step.**
+  `market.price_decimals` says where the decimal point goes: at 2, `405` is
+  4.05; at 4, `40525` is 4.0525. Markets differ, so read it per market
+  (`book.market.price_decimals`), never assume 2.
 - `book.best_buy_price()` / `book.best_sell_price()` return **-1** when that
   side of the book is empty. Check before doing arithmetic.
 - Prices must sit on the market's grid: use `market.price_tick` and
